@@ -1,0 +1,142 @@
+*{
+   box-sizing: border-box;
+   
+}
+html{
+  scroll-behavior: smooth;
+  
+}
+/*Nav Bar-----------------------------------------------------------------------*/
+ul {
+    list-style-type: none;
+    margin: 0;  
+  }
+  
+  li {
+    font-size: .85em;
+    font-weight: 500;
+    font-family: 'Oxygen', Arial, sans-serif;
+    float:left;
+    padding:.5em .65em;
+    margin:1.25em 1em;
+    text-transform:uppercase;
+    cursor:pointer;
+    background: rgb(11, 116, 2);
+    text-align:center;
+    border-radius:.75em;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+ }
+  
+  li a {
+    color:white;
+    text-decoration: none;
+  }
+
+.nav a:hover{
+    color: black;
+    transform: translateY(4px);
+}
+/*End Nav Bar------------------------------------------------------------------*/
+
+head{
+  
+  
+}
+body{
+  
+    margin: 0;
+}
+
+/*Henery Lawson quote, Our Beer,  and Chuck's Story grey scrolling box*/
+.greyQuote,
+.greyBeer,
+.greyStory
+{
+  background-color: darkgrey;
+ /* background-image: linear-gradient(rgb(70, 69, 69), white);*/
+  font-family: 'Oxygen', Arial, sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 55px;
+}
+/*Text for the heading Up Coming Events*/
+.upComingEvents,
+.ourStory{
+  font-family: 'Kodchasan',Arial, sans-serif;
+  text-align: center;
+  font-size: 4.25em;
+  padding-bottom: 75px;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color:  rgb(11, 116, 2);
+}
+/*The text inside each card. This is the brewery news and our beer text.*/
+.upComingEventContent{
+  font-size: 2em;
+}
+.upComingEventPics{
+  max-width: 90%;
+}
+.card {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    max-width: 500px;
+    text-align: center;
+    background: lightgray;
+    border-bottom: 5px solid black;
+    border-radius: 10px;
+  
+    position: center;
+  }
+  /*Button Style*/
+  button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color:  rgb(22, 187, 7);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  button:hover {background-color: #3e8e41}
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }
+  /*Button Style*/
+
+  /*Brewery News and Our Beers on home page*/
+  h2{
+    font-size: 2em;
+    font-family: 'Kodchasan',Arial, sans-serif;
+  }
+
+  .ourBeer{
+    color: black;
+    font-size: 3em;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+.footer{
+    position: bottom;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    background-image: linear-gradient(white,darkgrey);
+    /*background-color: darkgray;*/
+    text-align: center;
+    font-size: 1.35em;
+    padding: 10px;
+}
+
+
+
+
