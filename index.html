@@ -1,3 +1,4 @@
+<!--CREATED BY BLAKE COLLINS-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
 
-<!--Need to find a way to move this parallax style into the css folder while still maintaining scroll effect.-->
+<!--Need to find a way to move this parallax style into the css folder while still maintaining scroll effect. Scroll Effect with Main Logo as background.-->
         <style>
         .parallax {
         /* The image used */
@@ -30,10 +31,37 @@
         </style>
 <!--End style for parallax scroll effect-->
 
+<!--Need to find a way to move this parallax style into the css folder while still maintaining scroll effect. Second scroll effect with Exploring The World of Beers-->
+<style>
+  .parallax2 {
+  /* The image used */
+  background-image: url("images/BeersoftheWorld.jpg");
+  /* Set a specific height */
+  margin: 10px;
+  padding: 0;
+  min-height: 500px; 
+  z-index: -2;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  max-height: 100vh;
+  }
+  /*Media Query*/
+
+@media screen and (min-width: 768px){
+  .parallax2{
+    background-size: cover;
+
+  }
+}
+  </style>
+<!--End style for parallax scroll effect-->
+
   </head>
 
 <body>
-  
 <!--NAV BAR-->
 <header>
   <nav>
@@ -52,14 +80,14 @@
 <div class="parallax"></div>
 <!--Scroll effect-->
 
-  <!--Quote-->
+  <!--This is the grey box that scrolls up when moving down the web page.-->
     <div class="greyQuote"><h1><em>“</em> Beer makes you feel the way you ought to without beer <em>”</em><br><br>– HENERY LAWSON
      </h1>
     </div>
-<!--Quote-->
+<!---->
 
 <!--Main content that includes Brewery News and Our Beer-->
-<main class="flex">
+<div class="flex">
     <div class="main-content">
 
       <h1 class="upComingEvents">Upcoming Events</h1>
@@ -69,33 +97,50 @@
                     <h2>Brewery News</h2>
                         <p class ="upComingEventContent">There is always something going on here at Chuck's. Come on in and take a look around, this is were you'll find updates and the latest buzz around the brewery.
                         </p>  
-        <a href="breweryNews.html"><button class="breweryNews">Learn More</button></a>
-    </div>
+        <a href="breweryNews.html"><button
+          >Learn More</button
+          ></a></div>
 
       <div class="card">
         <img class="upComingEventPics" src="images/barCheers.jpeg" alt="Friends enjoying some beer">
           <h2>Our Beers</h2>
-            <p class ="upComingEventContent">Here is the start of our beer menu. Topping the list will no doubt be our flagship brews, the ones that got us started. We can't wait to start adding more to the list... Stay Tuned!
+            <p class ="upComingEventContent">Here is the start of our beer menu. Topping the list will no doubt be our flagship brews, the ones that got us started. We can't wait to start adding more to the list...Stay Tuned!
             </p>
-        <a href="ourBeers.html"><button class="ourBeers">Learn More</button></a>
+          <a href="ourBeers.html"><button class="ourBeers">Learn More</button></a>
       </div>
  </div>
-</main>
- <!--Main content that includes Brewery News and Our Beer-->
+</div>
+ <!--Exploring the World of Beer scroll content-------------------------------------------------------->
+<!--Scroll effect-->   
+<div class="parallax2"></div>
+<!--Scroll effect-->
+  <!--Exploring The World of Beer-->
+  <h1 class="exploringBeerTitle">Exploring The World of Beer</h1>
+  
+  <div class="flex">
+    <div class="card">
+      <img src="images/cheers.jpeg" alt="glass of beer">
+        <p class ="exploringBeerContent">Beer has been around for thousands of years, and while there are a number of places throughout the world that claim to be home to the oldest beers in existence one things for certain, there are amazing beers that come from every little section of the planet. This section is dedicated to exploring the wonderful beers of the world.</p>
+  <a href="#"><button class="exploringBeerButton">Learn More</button></a>
+  </div>
+</div>
+
 
  <!--Footer with contact information for Justin and Blake.-->
-    <footer class ="footer">
-      <img class="logo" src="images/NunChuck'sLogo.png" alt="Logo for Nun Chuck's Brewing">
-          <p>Lynnwood, Washington, USA<br> 
-             Phone:(206)636-1105<br>    
-             Email: info@nunchucksbrewing.com<br>
-             Copyright © 2019 Nun Chuck's Brewing Company
-            </p>
-            <p>Created By Blake Collins<br>
-               Phone: (425) 931-8936 <br>
-              Email: blakeac369@gmail.com<br> 
-              Github.com/BlakeACollins</p>
-    </footer>
+ <footer class ="footer">
+  <img class="logo" src="images/NunChuck'sLogo.png" alt="Logo for Nun Chuck's Brewing">
+    <div class="contactInformation">
+      <h1>Hours of Operation: Tuesday – Friday 2pm - 6pm</h1>
+      <p>Lynnwood, Washington, USA<br> 
+         Phone:(206) 636-1105 | Email: jj@nunchucksbrewing.com<br>
+         Copyright © 2019 Nun Chuck's Brewing Company
+        </p>
+          <p>Created By Blake Collins<br>
+           Phone: (425) 931-8936 | Email: blakeac369@gmail.com<br> 
+          Github.com/BlakeACollins
+        </p>
+    </div>
+</footer>
 <!--Footer with contact information for Justin and Blake.-->
 </body>
 </html>
