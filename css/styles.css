@@ -1,3 +1,4 @@
+/*CREATED BY BLAKE COLLINS*/
 *{
    box-sizing: border-box;
    
@@ -13,41 +14,47 @@ ul {
   }
   
   li {
-    font-size: .85em;
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 700;
     font-family: 'Oxygen', Arial, sans-serif;
-    float:left;
-    padding:.5em .65em;
-    margin:1.25em 1em;
-    text-transform:uppercase;
-    cursor:pointer;
-    background: rgb(11, 116, 2);
-    text-align:center;
-    border-radius:.75em;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
+    float:left; 
  }
   
   li a {
-    color:white;
+    padding:.15em;
+    margin: .15em;
+    color:black;
+    text-transform:uppercase;
+    cursor:pointer;
     text-decoration: none;
+    background: rgb(134, 163, 61);
+    text-align:center;
+    border-color: black;
+    border-radius:.75em;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    
   }
-
+nav{
+  position: fixed;
+  text-align: center;
+  z-index: 5;
+}
 .nav a:hover{
-    color: black;
-    transform: translateY(4px);
+    color: blue;
+    transform: translateY(6px);
 }
 /*End Nav Bar------------------------------------------------------------------*/
-/*Logo at the top of the page*/
+/*Logo at the top of the page. Wanted the logo to be hidden on moblie devices.----------------------------*/
 .topLogo{
 visibility: hidden;
 }
 
 body{
-    margin: 0;
+    margin: auto;
 }
 
-/*Henery Lawson quote, Our Beer,  and Chuck's Story grey scrolling box*/
+/*Henery Lawson quote, Our Beer,  and Chuck's Story grey scrolling box-----------------------------------*/
 /*Currently on Tap text*/
 .greyQuote,
 .greyBeer,
@@ -60,39 +67,40 @@ body{
   text-align: center;
   padding: 2px; 
 }
-/*Text for the heading Up Coming Events*/
+/*Text for the headings on the home page i.e. Upcoming Events and Exploring the world of beer. 
+Also the headings on the Currently Brewing and Chuck's Story, -------------------------------------------------------------------*/
 .upComingEvents,
-.ourStory{
+.ourStory,
+.exploringBeerTitle{
   font-family: 'Oxygen', Arial, sans-serif;
   text-align: center;
   font-size: 4.25em;
-  padding-bottom: 55px;
+  padding-bottom: 35px;
   text-decoration: underline;
-  text-decoration-style: double;
-  text-decoration-color:  rgb(11, 116, 2);
+  text-decoration-color:  rgb(134, 163, 61);
 }
-/*The text inside each card. This is the brewery news and our beer text.*/
-.upComingEventContent{
+/*The text inside each card. This is the brewery news and our beer text.----------------------------------*/
+.upComingEventContent,
+.exploringBeerContent{
   font-size: 2em;
 }
 .upComingEventPics{
   max-width: 90%;
 }
-/* Styling for the Brewery News and Our Beer sections on the home page*/
+/* Styling for the Brewery News and Our Beer sections on the home page----------------------------------*/
 .card {
-    margin: 20px;
+    margin: 25px;
     padding: 20px 40px 40px;
     max-width: 500px;
     text-align: center;
     background: lightgray;
-    border-bottom: 5px solid black;
+    border-bottom: 8px solid black;
     border-radius: 10px;
-    position: relative;
   }
   .card:hover {
-    border-color: rgb(22, 187, 7);
+    border-color: rgb(134, 163, 61);
   }
-  /*Button Style*/
+  /*Button Style------------------------------------------------------------------------------------------*/
   button {
     padding: 15px 25px;
     font-size: 24px;
@@ -100,46 +108,113 @@ body{
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color:  rgb(22, 187, 7);
+    background-color:  rgb(134, 163, 61);
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 0 9px #999;
   }
   
-  button:hover {background-color: #3e8e41}
+  button:hover {background-color: darkgreen}
   
   button:active {
     background-color: #3e8e41;
     box-shadow: 0 3px #666;
     transform: translateY(4px);
   }
-  /*Button Style*/
+  /*Button Style---------------------------------------------------------------------------*/
 
-  /*Brewery News and Our Beers on home page*/
+  /*Brewery News and Our Beers on home page-----------------------------------------------*/
   h2{
+    
     font-size: 2em;
     font-family: 'Oxygen', Arial, sans-serif;
   }
-
-  
-  /*Growler and Keg Pricing text*/
-  .growlerKeg{
-    font-family: 'Oxygen', Arial, sans-serif;
+  /*Chucks Story Main Conent Stying------------------------------------------------------------*/
+  .ourStoryContent{
+    text-align: center;
+    margin: 25px;
+    border: 3px solid black;
+    border-radius: 55px;
+    border-spacing: .5em;
   }
-
+  .ourStoryParagraph{
+    font-size: 1.75em;
+    line-height: 1.5em;
+  }
+  
+  /*Our Beers styling-----------------------------------------------------------------------------------*/
+  
+  .currentlyBrewing{
+    font-family: 'Oxygen', Arial, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color:  rgb(134, 163, 61);
+  }
+  .ourBeerPicture{
+    max-width: 100%;
+  }
+  .beer-container{
+    margin: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 55px;
+  }
+  .beerDescription{
+    font-size: 1.3em;
+    margin: 15px;
+    line-height: 1.5em;
+  }
+  
+  /*Exploring the World of Beer area on Home page-----------------------------------------*/
+  
+  .exploringBeer{
+    font-family: 'Oxygen', Arial, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding: 5px;
+  }
+  /*Exploring the World of Beer Button*/
+  .exploringBeerButton{
+    padding-bottom: 10px;
+  }
+  /*Brewery News---------------------------------------------------------------------------------*/
+  .breweryNews{
+    font-size: 1.75em;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 25px;
+    border: 3px solid black;
+    border-radius: 55px;
+  }
+/*Footer Styling-------------------------------------------------------*/
 .footer{
     position: relative;
     left: 0;
     bottom:0;
     width: 100%;
-    background-image: linear-gradient(white,darkgrey);
+    background-image: linear-gradient(darkgrey,white);
     /*background-color: darkgray;*/
     text-align: center;
-    font-size: 1.35em;
-    padding: 10px;
+    font-size: 1.2em;
+    padding: 5px;
+}
+/*Contact Page Stying*/
+.contactInformation{
+  text-align: center;
+}
+.logoOnContactPage{
+  text-align: center;
+  padding-top: 50px;
 }
 
-/*Scroll Bar*/
+/* Side Scroll Bar-------------------------------------------------------------------------*/
 ::-webkit-scrollbar-track
 {
     box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
@@ -156,22 +231,77 @@ body{
 ::-webkit-scrollbar-thumb
 {
     border-radius: 10px;
-    background-color: rgb(11, 116, 2);
+    background-color: rgb(134, 163, 61);
     background-image: -webkit-linear-gradient(90deg,transparent rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
 }
-/*Media Query*/
+/*Media Query-------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
     .topLogo{
       visibility: visible;
       float: right;
     }
+    .logoOnContactPage{
+      float: right;
+      padding-top: 50px;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;  
+    }
+    
+    li {
+      font-size: 1em;
+      font-weight: 700;
+      font-family: 'Oxygen', Arial, sans-serif;
+      padding:.15em;
+      margin: .25em;
+      text-transform:uppercase;
+      cursor:pointer;
+      background: rgb(134, 163, 61);
+      text-align:center;
+      border-color: black;
+      border-radius:.75em;
+      transition-duration: .5s;
+      transition-timing-function: ease-in-out;
+      display: inline-block;
+   }
+    
+    li a {
+      color:black;
+      text-decoration: none;
+    }
+    /*Picture on OUr Beer page*/
+    .ourBeerPicture{
+      text-align: center;
+    }
+    /*Styling for Our Beer page*/
     .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
+      justify-content: space-around;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
   }
+   /*Exploring the World of Beer area on Home page*/
+  
+  .exploringBeer{
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.75em;
+    padding: 5px;
+  }
+  
+  /* contact page information*/
+  .contactInformation{
+    padding-top: 75px;
+    text-align: center; 
+  }
+ 
+
 }
