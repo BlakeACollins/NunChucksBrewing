@@ -1,0 +1,86 @@
+<!--CREATED BY BLAKE COLLINS-->
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Nun Chuck's Brewery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <!--Need to find a way to move this parallax style into the css folder while still maintaining scroll effect. Second scroll effect with Exploring The World of Beers-->
+<style>
+    .parallax2 {
+    /* The image used */
+    background-image: url("images/BeersoftheWorld.jpg");
+    /* Set a specific height */
+    margin: 10px;
+    padding: 0;
+    min-height: 500px; 
+    z-index: -2;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    /*Media Query*/
+  
+  @media screen and (min-width: 768px){
+    .parallax2{
+      background-size: cover;
+  
+    }
+  }
+    </style>
+  <!--End style for parallax scroll effect-->
+
+</head>
+<body>
+    <!--NAV BAR-->
+    <header>
+      <nav>
+      <div class="main-nav"> 
+        <ul class="nav">
+          <li><a href ="index.html">Home</a></li>
+          <li><a href="ourBeers.html">Beer</a></li>
+          <li><a href="chucksStory.html">Chuck's Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div> 
+    </nav>
+    </header>
+    <!--NAV BAR-->
+
+     <!--Exploring the World of Beer scroll content-------------------------------------------------------->
+<!--Scroll effect-->   
+<div class="parallax2"><img class="topLogo" src="images/NunChuck'sLogo.png" alt="Logo for Nun Chuck's Brewing"></div>
+<!--Scroll effect-->
+  <!--Exploring The World of Beer-->
+  <h1 class="exploringBeerTitle">Exploring The World of Beer</h1>
+
+<main>
+        <h2 style="text-align: center;">Coming Soon! I'm currently brewing like a crazy man!</h2>
+</main>
+
+ <!--Footer with contact information for Justin and Blake.-->
+ <footer class ="footer">
+    <img class="logo" src="images/NunChuck'sLogo.png" alt="Logo for Nun Chuck's Brewing">
+      <div class="contactInformation">
+        <h1>Hours of Operation: Tuesday – Friday 2pm - 6pm</h1>
+        <p>Lynnwood, Washington, USA<br> 
+           Phone:(206) 636-1105 | Email: jj@nunchucksbrewing.com<br>
+           Copyright © 2019 Nun Chuck's Brewing Company
+          </p>
+            <p>Created By Blake Collins<br>
+             Phone: (425) 931-8936 | Email: blakeac369@gmail.com<br> 
+            Github.com/BlakeACollins
+          </p>
+      </div>
+  </footer>
+  <!--Footer with contact information for Justin and Blake.-->
+</body>
+</html>
