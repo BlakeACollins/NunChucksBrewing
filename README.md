@@ -1,6 +1,6 @@
 # NunChucksBrewing
 
-Currently developing the website for a local craft brewery. The site is hosted through bluehost and you can visit it at nunchucksbeer.com
+This is my first paid website! I was approched by a local craft brewer that needed a web site. The site is currently live at [nunchucksbeer.com]. It is still a work in progess, with updates to help with moblie devices and UI changes.  
 
 
-Still a work in progress.
+
